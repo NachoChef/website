@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - Misc</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <div>
+    
+      <!--
+        Gallery title
+      -->
+      <header style="color: #17baef;">
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+    
+      <nav class="breadcrumbs">
+        <div class="mask"></div>
+    <a class="breadcrumb-item" href="index.html">Home</a>
+          <span class="separator">&gt;</span><a class="breadcrumb-item" href="Misc.html">Misc</a>
+      </nav>
+    
+      <!--
+        Main gallery panel
+      -->
+      <section id="content">
+    
+        <!--
+          Nested albums, if any
+        -->
+        <ul id="albums">
+        </ul>
+    
+        <!--
+          All photos and videos
+        -->
+        <ul id="media">
+            
+              <li data-src="media/large/Misc/DSC_0575.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_0575.JPG"
+                  
+                  data-filename="DSC_0575.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_0575.JPG">
+                  <img src="media/thumbs/Misc/DSC_0575.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_0575.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Misc/DSC_0984.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_0984.JPG"
+                  
+                  data-filename="DSC_0984.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_0984.JPG">
+                  <img src="media/thumbs/Misc/DSC_0984.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_0984.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Misc/DSC_0986-Edit.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_0986-Edit.JPG"
+                  
+                  data-filename="DSC_0986-Edit.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_0986-Edit.JPG">
+                  <img src="media/thumbs/Misc/DSC_0986-Edit.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_0986-Edit.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Misc/DSC_1014.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_1014.JPG"
+                  
+                  data-filename="DSC_1014.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_1014.JPG">
+                  <img src="media/thumbs/Misc/DSC_1014.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_1014.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Misc/DSC_1020.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_1020.JPG"
+                  
+                  data-filename="DSC_1020.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_1020.JPG">
+                  <img src="media/thumbs/Misc/DSC_1020.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_1020.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Misc/DSC_1993-Edit.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Misc/DSC_1993-Edit.JPG"
+                  
+                  data-filename="DSC_1993-Edit.JPG"
+            
+                >
+                <a href="media/original/Misc/DSC_1993-Edit.JPG">
+                  <img src="media/thumbs/Misc/DSC_1993-Edit.JPG"
+                       width="120"
+                       height="120"
+                       alt="DSC_1993-Edit.JPG" />
+                </a>
+              </li>    </ul>
+    
+        <!--
+          Pagination
+        -->
+    
+        <!--
+          Zip file link
+        -->
+    
+      </section>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright © 2021 Justin Jones</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
